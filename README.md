@@ -1,5 +1,7 @@
 # 🔊 @vueuse/sound
 
+# Fork from [@vueuse/sound](https://github.com/vueuse/sound) and fix type definitions.
+
 [![npm](https://img.shields.io/npm/v/@vueuse/sound.svg)](https://www.npmjs.com/package/@vueuse/sound)
 [![npm](https://img.shields.io/npm/dm/@vueuse/sound.svg)](https://npm-stat.com/charts.html?package=@vueuse/sound)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/991aafcb-635a-457d-93a4-10f4b895c8c5/deploy-status)](https://app.netlify.com/sites/vueuse-sound/deploys)
@@ -260,6 +262,7 @@ export default {
 }
 </script>
 ```
+
 ## Vite
 
 If you are using Vite, you should add the following to your defineConfig options in vite.config.js:
@@ -280,7 +283,7 @@ Add `@vueuse/sound/nuxt` to the `modules` section of your `nuxt.config`:
 
 ```js
 defineNuxtConfig({
-  modules: ['@vueuse/sound/nuxt']
+  modules: ['@vueuse/sound/nuxt'],
 })
 ```
 
@@ -291,13 +294,13 @@ defineNuxtConfig({
   sound: {
     sounds: {
       back: {
-        src: "/back.wav",
+        src: '/back.wav',
         options: {
-          volume: 0.25
-        }
-      }
-    }
-  }
+          volume: 0.25,
+        },
+      },
+    },
+  },
 })
 ```
 
@@ -307,9 +310,9 @@ You can also automatically scan an generate typings for your sounds in `public/s
 defineNuxtConfig({
   sound: {
     sounds: {
-      scan: true
-    }
-  }
+      scan: true,
+    },
+  },
 })
 ```
 

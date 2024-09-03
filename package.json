@@ -1,19 +1,19 @@
 {
   "name": "@vueuse/sound",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "🔊 A Vue composable for playing sound effects",
   "author": {
-    "name": "Yaël GUILLOUX",
-    "email": "yael.guilloux@gmail.com"
+    "name": "baizhi958216",
+    "email": "1475289190@qq.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/vueuse/sound#readme",
+  "homepage": "https://github.com/baizhi958216/sound#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vueuse/sound.git"
+    "url": "git+https://github.com/baizhi958216/sound.git"
   },
   "bugs": {
-    "url": "https://github.com/vueuse/sound/issues"
+    "url": "https://github.com/baizhi958216/sound/issues"
   },
   "keywords": [
     "vue",
