@@ -108,6 +108,14 @@ export function useSound(
     isPlaying.value = false
   }
 
+  const fade = (from: number, to: number, duration: number, id?: number):void=>{
+    if(!sound.value){
+      return
+    }
+    sound.value.fade(from, to, duration, id)
+    isPlaying.value = true
+  }
+  
   const returnedValue: ReturnedValue = {
     play,
     sound,
@@ -115,6 +123,7 @@ export function useSound(
     duration,
     pause,
     stop,
+    fade
   }
 
   return returnedValue

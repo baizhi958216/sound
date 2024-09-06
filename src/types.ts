@@ -34,6 +34,7 @@ export interface ReturnedValue {
   sound: Ref<Howl | null>
   stop: (id?: number) => void
   pause: (id?: number) => void
+  fade: (from: number, to: number, duration: number, id?: number) => void 
   isPlaying: Ref<boolean>
   duration: Ref<number | null>
 }
